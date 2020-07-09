@@ -3,5 +3,9 @@ export const sendStoregData = (data) => {
 };
 
 export const getStoregData = () => {
-  return JSON.parse(localStorage.getItem("storege"));
+  if (JSON.parse(localStorage.getItem("storege")) !== null) {
+    return JSON.parse(localStorage.getItem("storege"));
+  } else {
+    return [];
+  }
 };
