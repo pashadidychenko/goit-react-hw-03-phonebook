@@ -1,5 +1,4 @@
 import React from "react";
-// import Input from "@material-ui/core/Input";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import { FormControl } from "@material-ui/core/";
@@ -25,10 +24,10 @@ export class AddContact extends React.Component {
       ...this.state,
     };
     this.props.onFormSubmit(contact);
-      this.setState({
+    this.setState({
       name: "",
       number: "",
-     });
+    });
   };
 
   render() {
