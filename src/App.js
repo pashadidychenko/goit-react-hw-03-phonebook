@@ -17,7 +17,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    this.setState({ contacts: getStoregData() });
+    // this.setState({ contacts: getStoregData() });
   }
 
   componentDidUpdate() {
