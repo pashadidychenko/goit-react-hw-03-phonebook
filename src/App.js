@@ -16,7 +16,7 @@ class App extends React.Component {
     filter: "",
   };
 
-  async componentDidMount() {
+  componentDidMount() {
     this.setState({ contacts: getStoregData() });
   }
 
