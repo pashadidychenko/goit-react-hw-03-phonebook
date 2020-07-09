@@ -8,7 +8,7 @@ import FindContact from "./components/Contacts/WorksWithContact/FindContact";
 import {
   sendStoregData,
   getStoregData,
-} from "./components/Services/LocalStoreg.js";
+} from "./components/Services/LocalStoreg";
 
 class App extends React.Component {
   state = {
@@ -17,7 +17,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    // this.setState({ contacts: getStoregData() });
+    this.setState({ contacts: getStoregData() });
   }
 
   componentDidUpdate() {
